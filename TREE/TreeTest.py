@@ -37,7 +37,6 @@ class Tree:
             func(current)
             stack.extend(reversed(current.children))
 
-
 class TestDrzewo(unittest.TestCase):
     def test_constructor(self):
         n = Drzewo('a')
@@ -56,7 +55,6 @@ class TestDrzewo(unittest.TestCase):
         self.assertEqual(len(n.children), 1)
         n.remove('b')
         self.assertEqual(len(n.children), 0)
-
 
 class TestTree(unittest.TestCase):
     def test_starts_empty(self):
@@ -91,7 +89,5 @@ class TestTree(unittest.TestCase):
         t.traverseDF(traverse_callback)
         self.assertEqual(letters, ['a', 'b', 'c', 'd'])
 
-
-if Drzewo == '__main__':
+if __name__ == '__main__':
     unittest.main()
-
