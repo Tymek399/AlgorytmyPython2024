@@ -1,5 +1,4 @@
 class Queue:
-
     def __init__(self):
         self.queue = []
 
@@ -9,7 +8,6 @@ class Queue:
     def remove(self):
         if not self.is_empty():
             return self.queue.pop(0)
-
         else:
             raise IndexError("Cannot remove from an empty queue")
 
