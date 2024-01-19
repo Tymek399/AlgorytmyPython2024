@@ -1,20 +1,5 @@
 import unittest
-
-class Queue:
-    def __init__(self):
-        self.queue = []
-
-    def add(self, item):
-        self.queue.append(item)
-
-    def remove(self):
-        if not self.is_empty():
-            return self.queue.pop(0)
-        else:
-            raise IndexError("Cannot remove from an empty queue")
-
-    def is_empty(self):
-        return len(self.queue) == 0
+from queue import Queue  # Import the Queue class from the module where it is defined
 
 class TestQueue(unittest.TestCase):
     def test_queue_is_class(self):
@@ -43,4 +28,3 @@ class TestQueue(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
