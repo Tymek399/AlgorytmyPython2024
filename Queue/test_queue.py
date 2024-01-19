@@ -1,5 +1,5 @@
 import unittest
-from queue import Queue  # Import the Queue class from the module where it is defined
+from queue import Queue 
 
 class TestQueue(unittest.TestCase):
     def test_queue_is_class(self):
